@@ -1,0 +1,120 @@
+body { 
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #522d84;
+}
+
+h3 { 
+    font-family: 'EB Garamond', serif;
+    color: #dba18c;
+}
+
+/* WELCOME + LOGO  */
+
+.drag-welcome { 
+    padding-bottom: 50px;
+}
+
+.sign-in { 
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.logo {
+    width: 360px;
+}
+
+/* LOGIN CONTAINER  */
+
+.login-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 25px 100px;
+}
+
+/* CREDENTIALS AREA */
+
+.credentials { 
+    width: 100%;
+}
+
+input{ 
+    background-color: #522d84;
+    border: solid 1px #dba18c;
+    border-radius: 5px;
+    color: #dba18c;
+}
+
+/* REMEMBER ME + FORGOT PASSWORD */
+
+.checkbox-pw { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    font-size: 0.75em;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #221238;
+    text-decoration: none;
+}
+
+a { 
+    color: #221238;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: #dba18c;
+    text-decoration: underline;
+}
+
+/* SUBMIT BUTTON */
+
+#submit { 
+    /* font-family: 'EB Garamond', serif; */
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#submit:hover { 
+    background-color: white;
+    color: #522d84;
+    font-weight: 800;
+}
+
+@media only screen and (min-width: 992px) {
+
+    /* WELCOME + LOGO  */
+.drag-welcome { 
+    padding-bottom: 0;
+}
+
+    /* LOGIN CONTAINER */
+
+    .login-container { 
+        flex-direction: row;
+        border: 1px solid #dba18c;
+        margin-top: 125px;
+        padding: 40px 25px;
+    }
+
+    .logo { 
+        width: 500px;
+        padding-right: 25px;
+    }
+
+    /* LOGIN FORM  */
+    .login-form { 
+        width: 100%;
+    }
+
+    /* CREDENTIALS AREA  */
+
+    .credentials { 
+        padding: 0 25px;
+    }
+
+}

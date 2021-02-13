@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous"
+  />
+  <script
+  src="https://kit.fontawesome.com/d894783b3c.js"
+  crossorigin="anonymous"
+></script>
+    <link rel="stylesheet" href="clue.css">
+    <title>DRAG MAIL INBOX</title>
+</head>
+
+<body>
+
+    <div class="dragmail-logo">
+        <!-- <h3>DRAG MAIL</h3> -->
+        <img src="../assets/DRAG-pink.png" class="logo">
+        </div>
+        
+        <div class="inbox-container">
+            <!-- d-flex justify-content-evenly flex-column -->
+        <div class="icon-bar d-flex justify-content-evenly " id="bottom">
+            <a href="#"><i class="fas fa-edit" data-bs-toggle="modal"  data-bs-target="#composeModal"></i></a> 
+            <a class="active" href="inbox.html"><i class="fas fa-inbox"> </i></i></a> 
+            <a href="#"><i class="fas fa-star" data-bs-toggle="modal" data-bs-target="#importantModal"></i></a>
+            <a href="../index.html"><i class="fas fa-sign-out-alt" data-bs-toggle="modal"></i></a> 
+        </div>
+
+         <!-- COMPOSE MODAL -->
+         <div
+         class="modal fade"
+         id="composeModal"
+         tabindex="-1"
+         aria-labelledby="composeModalLabel"
+         aria-hidden="true"
+       >
+         <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <div class="modal-header">
+               <button
+                 type="button"
+                 class="btn-close"
+                 data-bs-dismiss="modal"
+                 aria-label="Close"
+               ></button>
+             </div>
+             <div class="modal-body">
+               No time to write emails! Let's get back to business.
+             </div>
+             <div class="modal-footer">
+               <button
+                 type="button"
+                 class="btn btn-secondary"
+                 data-bs-dismiss="modal"
+               >
+                 Close
+               </button>
+             </div>
+           </div>
+         </div>
+       </div>
+
+        <!-- STAR MODAL -->
+        <div
+          class="modal fade"
+          id="importantModal"
+          tabindex="-1"
+          aria-labelledby="importantModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">Nothing to see here!</div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INBOX -->
+        
+        <div class="inbox-group">
+
+            <div class="row">
+                <div class="col inbox-col d-flex justify-content-between">
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-libidex-list" data-bs-toggle="list" href="#list-libidex" role="tab" aria-controls="libidex">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">RE: Get a LONG little doggie...affordable Male Enhancement solutions</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                          <p class="mb-1">Tired of giving a “limp” performance? ...</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="list-big-dog-brew-list" data-bs-toggle="list" href="#list-big-dog-brew" role="tab" aria-controls="big-dog-brew">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">New Product Offerings From Big Dog Brewery</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                          <p class="mb-1">This month why not get your hands on some Big ...</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="list-job-app-list" data-bs-toggle="list" href="#list-job-app" role="tab" aria-controls="job-app">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Job Application (Resume Below)</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                          <p class="mb-1">Hey!!
+                            It was SO fantastic to meet you lsadt week ...</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="list-lasagne-list" data-bs-toggle="list" href="#list-lasagne" role="tab" aria-controls="lasagne">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">What’s on for the Month of February at Club Lasagne</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                          <p class="mb-1">Love is in the air this month! Could Cupid’s Arrow be zinging your bum? ...</p>
+                    </a>
+                    <a class="list-group-item list-group-item-action" id="list-insurance-doc-list" data-bs-toggle="list" href="#list-insurance-doc" role="tab" aria-controls="insurance-doc">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">RE: Insurance Documents</h5>
+                            <small class="text-muted">3 days ago</small>
+                        </div>
+                          <p class="mb-1">Hello,
+                            As requested, below are your updated insurance documents ...</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col msg-col">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-libidex" role="tabpanel" aria-labelledby="list-libidex-list">
+                       <h3>Re: Get a LONG little doggie... affordable Male Enhancement solutions</h3>
+                        <small class="text-muted">
+                            From LibidiEx<br>
+                            To Me
+                        </small>
+                        <p class="mb-1"> Tired of giving a “limp” performance? Want to get a “standing” ovation every time? Try
+                            LibidiEx. The same premium ingredients as the other big brands, at half the price!</p>
+                        <p class="mb-1">
+                            <ul class="no-bullets">
+                                <li>2 20mg Pills….. £17.99</li>
+                                <li>4 20 mg Pills…..£27.99</li>
+                                <li>10 20 mg Pills....£69.99 (BEST VALUE!)</li>
+                              </ul>
+                        </p>
+                        <img src="../assets/libidex.png" class="logo">
+                    </div>
+                    <div class="tab-pane fade" id="list-big-dog-brew" role="tabpanel" aria-labelledby="list-big-dog-brew-list">
+                        <h3>New Product Offerings From Big Dog Brewery</h3>
+                        <small class="text-muted">
+                            From Big Dog Brewery<br>
+                            To Me
+                        </small>
+                        <p class="mb-1">
+                            This month, why not get your hands on some Big Dog Bitters?
+                        </p>
+                        <p class="mb-1">
+                            Try our new London Labrador Lager! Or go balls out with our Never Neutered Negroni Mix!
+                        </p>
+                        <p class="mb-1">
+                            Discounts available for bulk orders.
+                         </p>
+                         <img src="../assets/big-dog.png" class="logo">
+                    </div>
+                    <div class="tab-pane fade" id="list-job-app" role="tabpanel" aria-labelledby="list-job-app-list">
+                        <h3>Job Application (Resume Below)</h3>
+                        <small class="text-muted">
+                            From James Bluth<br>
+                            To Me
+                        </small>
+                        <p class="mb-1">
+                           Hey!!
+                        </p>
+                        <p class="mb-1">
+                            It was SO fantastic to meet you lsadt week. I know you said your not hiring but I Really think I could bring alot to the team at the Glory Hole. PLZ consider checking out my resumee and I could be hopping on at the GLory Hole before you no it!
+                            Thanks,
+                         </p>
+                         <p class="mb-1">
+                            Thanks,<br>
+                            James "Tiny Tina" Bluth
+                         </p><br>
+                         <p class="mb-1">
+                            Education:<br>
+                            Lucibella’s Drag Academy<br>
+                            School of Hard Knocks ; )<br>
+                         </p>
+                         <p class="mb-1">
+                            Special Skills:<br>
+                            I can do this entrance…… but BETTER ! :D
+                         </p>
+                    </div>
+                    <div class="tab-pane fade" id="list-lasagne" role="tabpanel" aria-labelledby="list-lasagne-list">
+                        <h3>What’s on for the Month of February at Club Lasagne</h3>
+                        <small class="text-muted">
+                            From Club Lasagne<br>
+                            To Me
+                        </small>
+                        <p class="mb-1">
+                            Love is in the air this month! 
+                        </p>
+                        <p class="mb-1">
+                             Could Cupid’s Arrow be zinging your bum?
+                        </p>
+                        <p class="mb-1">            
+                            Happy Hour 4 P.M. - 6 P.M. Monday through Thursday ALL MONTH LONG
+                            Back by popular demand… our famous Jellied Eel Surprise!
+                        </p>
+                        <p class="mb-1">            
+                            Come to the Valentine’s Day MixXxer and find that next “special someone”... or at least someone for the night!
+                        </p>
+                        <img src="../assets/lasagne.png" class="logo">
+                    </div>
+                    <div class="tab-pane fade" id="list-insurance-doc" role="tabpanel" aria-labelledby="list-insurance-doc-list">
+                        <h3>Re: Insurance Documents</h3>
+                        <small class="text-muted">
+                            From Insurance Me Quick<br>
+                            To Me
+                        </small>
+                        <p class="mb-1">
+                            Hello,
+                        </p>
+                        <p class="mb-1">
+                            As requested, below are your updated insurance documents with the “loss of talent” clause added. If for some reason you invoke this clause, there will be a payout of £100,000. Please see the attached document for details.
+                        </p>
+                        <p class="mb-1">
+                            Thank you,<br>
+                            Insure Me Quick
+                        </p>
+                        <small class="text-muted">Attachment: 1</small>
+                        <div class="card" style="width: 18rem;">
+                            <a href="assets/Certificate of Insurance.pdf" target="_blank" class="card-link">
+                                <img src="assets//re-insurance.png" class="card-img-top" alt="re:insurance">
+                            </a>
+                            
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+    </div>
+
+        <!-- <div class="inbox-msg">
+            <div class="default">
+                <em>No messages to display</em>
+            </div>
+        </div> -->
+        
+        </div>
+
+      <!-- BOOTSTRAP SCRIPTS -->
+      <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+
+</body>
+</html>
