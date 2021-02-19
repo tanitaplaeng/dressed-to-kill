@@ -24,7 +24,6 @@ body {
 .icon-bar { 
   width: 100%;
   background-color: #F6D7CE;
-  /* overflow: auto; */
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -33,7 +32,6 @@ body {
 
 .icon-bar a {
   float: left;
-  /* width: 20%; */
   text-align: center;
   padding: 12px 0;
   transition: all 0.3s ease;
@@ -50,22 +48,29 @@ body {
   display: none;
 }
 
+.msg-col { 
+  padding-top: 15px;
+}
 
+.buffer { 
+  padding-top: 10px;
+}
+
+.overscroll { 
+  padding-left: 15px;
+  padding-bottom: 100px;
+}
 
 @media (min-width: 992px) { 
 
-/* .inbox-col { 
-height: 100vh;
-} */
 .msg-col { 
-  padding: 0;
   padding-top: 15px;
 }
 
   .icon-bar {
     width: 100px;
     background-color: #F6D7CE;
-    height: 75vh;
+    height: 80vh;
     position:relative;
     flex-direction: column;
     justify-content: center;
@@ -79,8 +84,8 @@ height: 100vh;
     transition: all 0.3s ease;
     color: white;
     font-size: 36px;
-      bottom: 0;
-       height: 100px;
+    bottom: 0;
+    height: 100px;
     
   }
   
@@ -89,24 +94,30 @@ height: 100vh;
   }
   
   .inbox-container { 
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
   
   .inbox { 
-  border: 1px solid black;
-  width: 100%;
+    border: 1px solid black;
+    width: 100%;
   }
   
   .inbox-msg { 
     display: contents;
-  border: 1px solid black;
-  width: 100%;
+    border: 1px solid black;
+    width: 100%;
   }
 
   .default { 
     text-align: center;
     font-style: italic;
+  }
+
+  .overscroll { 
+    padding-left: 0;
+    padding-bottom: 0;
+    width: 90vh;
   }
 
 }
